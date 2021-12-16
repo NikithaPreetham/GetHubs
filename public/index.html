@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetHubs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href='assets/index.css' type='text/css'>
+</head>
+<body>
+    <h1 class="text-center">GetHubs</h1>
+
+    <div class="container">
+        <div class="form-row justify-content-center">
+            <h3>List out a particular user's repositories</h3>
+        </div>
+        <div class="form-row justify-content-center">
+            <p>Enter a GitHub user's username to list out five of their repos</p>
+        </div>
+        <div class="form-row justify-content-center">
+            <form class="input-group mb-3" id="gitIdForm">
+                <input id="username" type="text" class="form-control" placeholder="GitHub username">
+                <div class="input-group-append">
+                    <input type="submit" id="submit" class="btn btn-success" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="form-row justify-content-center">
+            <table class="table" id="userRepos"></table>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./git_api.js"></script>
+</body>
+</html>
